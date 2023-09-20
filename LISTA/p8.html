@@ -1,0 +1,14 @@
+<script>
+const precocombustivel = prompt("Informe o preço do litro do combustível:");
+const litros = prompt("Informe a quantidade de litros utilizados diariamente:");
+const precotp = prompt("Informe o preço do transporte público diário:");
+
+const custocarro = precocombustivel * litros * 2; 
+const custotp = precotp * 2; 
+
+const meio = custocarro < custotp ? "Carro" : "Transporte Público";
+const custototal = (custocarro < custotp)? custocarro : custotp;
+
+alert('O meio de transporte mais barato é'+ meio + 'O custo diário para ir e voltar do trabalho é de R$'+ custototal.toFixed(2));
+
+</script>
