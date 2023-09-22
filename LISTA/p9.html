@@ -7,8 +7,8 @@ Se o total de horas trabalhadas ultrapassar 60 horas, haverá adicional de 30%.
 Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
 */
-const horastrabalhadas = prompt("Insira a quantidade de horas trabalhadas semanalmente:");
-const taxa = prompt("insira quanto você recebe por hora trabalhada:");
+const horastrabalhadas = prompt("Insira a quantidade de horas trabalhadas semanalmente:").trim().replace(".", ",");
+const taxa = prompt("insira quanto você recebe por hora trabalhada:").trim().replace(".", ",");
 
 const salario = (horastrabalhadas <= 45)? horastrabalhadas * taxa :  (horastrabalhadas <= 60) ? 45 * taxa + (horastrabalhadas - 45) * taxa * 1.2 : 45 * taxa + 15 * taxa * 1.2 + (horastrabalhadas - 60) * taxa * 1.3;
 

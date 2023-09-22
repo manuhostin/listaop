@@ -6,6 +6,6 @@
         //- até 1500(inclusive): aumento de 10 %
         //- acima de 1500: aumento de 5 %
     
-const preco = prompt('insira o preço');
+const preco = prompt('insira o preço').trim().replace(".", ",");
 (preco <= 280)? alert('O preco e:' + Number(preco) + (preco * 0.20)) :(preco <= 700)? alert('O preco e:' + Number(preco) + (preco * 0.15)) : (preco <= 1500)? alert('O preco e:' + Number(preco) + (preco * 0.10)) : (preco > 1500)? alert('O preco e:' + Number(preco) + (preco * 0.05)) : alert ('valor invalido');
 </script>
